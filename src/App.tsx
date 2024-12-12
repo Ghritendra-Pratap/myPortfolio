@@ -87,14 +87,14 @@ function App() {
             {...pageTransition}
           >
             {/* ------------------About Section------------------------ */}
-            <div className="section1-intro px-[20%] h-[80vh] flex items-center font-serif space-x-2 text-introText">
+            <div className="section1-intro px-[20%] h-[70vh] flex items-center font-serif space-x-2 text-introText">
               <div className="animate-imgFadeIn flex items-center justify-center min-h-screen">
                 <img src="/images/person2.jpg" className="rounded-full bg-gray-200" />
               </div>
 
               <div className="animate-textFadeIn text-center w-[50%] bg-gray-200 rounded-full">
                 <div className="animate-fadeIn space-y-2 p-10">
-                  <div className="text-3xl animate-[slideUp_1.5s_ease-out_forwards_1.7s]">Ghritendra Pratap Singh</div>
+                  <div className="text-3xl animate-[slideUp_1.5s_ease-out_forwards_1.7s] text-customBlue ">Ghritendra Pratap Singh</div>
                   <div className="font-bold animate-[slideUp_1.5s_ease-out_forwards_1.9s]">A bit about me</div>
                   <p className="text-sm animate-[slideUp_1.5s_ease-out_forwards_2s]">
                     I am a MERN stack developer specializing in building full-stack web applications using MongoDB, Express.js, React, and Node.js. With expertise in both front-end and back-end technologies, I deliver dynamic, responsive, and scalable solutions tailored to clients' needs.
@@ -102,14 +102,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className='technologies flex justify-between px-10'>
+            <div className='technologies flex justify-between p-10  '>
               <span><img src="/images/react.png" className='w-30 h-20' /></span>
-              <span><img src="/images/node.webp" className='w-30 h-20' /></span>
-              <span><img src="/images/mongo.png" className='w-30 h-20' /></span>
-              <span><img src="/images/redux.jpg" className='w-30 h-20' /></span>
-              <span><img src="/images/git.png" className='w-30 h-20' /></span>
+              <span><img src="/images/node11.png" className='w-30 h-20' /></span>
+              <span><img src="/images/redux11.png" className='w-30 h-20' /></span>
+              <span><img src="/images/git11.png" className='w-30 h-20' /></span>
+              <span><img src="/images/mongo12.png" className='w-30 h-20' /></span>
+              
               <span><img src="/images/postgre.png" className='w-30 h-20' /></span>
             </div>
+          
           </motion.div>
         )}
 
@@ -166,9 +168,9 @@ function App() {
             {...pageTransition}
           >
             {/* ------------------Contact Section------------------------ */}
-            <div className="section3-contact px-10 h-[90vh] py-10 text-center font-serif">
-              <h2 className="text-3xl font-bold">Contact Me</h2>
-              <p className="mt-5">Feel free to reach out for collaboration or inquiries!</p>
+            <div className="section3-contact ppx-[20%] h-[90vh] flex flex-col items-center text-introText font-serif ">
+              <h2 className="text-3xl text-center text-customBlue mt-20 lg:mt-30">Contact Me</h2>
+              <p className="mt-5 lg:mt-20">Feel free to reach out for collaboration or inquiries!</p>
               <button onClick={() => setOpen(!open)} className="px-4 py-2 mt-5 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                 Get in Touch
               </button>
@@ -177,9 +179,9 @@ function App() {
                 <button type='submit' className='px-4 py-2 mt-5 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500'>Submit</button>
               </div>}
               <div className=' flex justify-center gap-7 mt-5'>
-                <a href='https://www.linkedin.com/in/ghritendra/' target='_blank'><FaLinkedinIn className='w-8 h-8'/></a>
-                <a href='https://github.com/Ghritendra-Pratap' target='_blank'><FaGithub className='w-8 h-8'/></a>
-                <a href='mailto:ghritendra18@gmail.com' target='_blank'><SiGmail className='w-8 h-8'/></a>
+                <a href='https://www.linkedin.com/in/ghritendra/' target='_blank'><FaLinkedinIn className='w-8 h-8 hover:animate-bounce'/></a>
+                <a href='https://github.com/Ghritendra-Pratap' target='_blank'><FaGithub className='w-8 h-8 hover:animate-bounce'/></a>
+                <a href='mailto:ghritendra18@gmail.com' target='_blank'><SiGmail className='w-8 h-8 hover:animate-bounce'/></a>
               
               </div>
               
